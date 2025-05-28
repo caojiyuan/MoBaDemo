@@ -17,7 +17,8 @@ class IdleToAttackTransition : FSMTransition {
         try {
             while (BlackBorad.CharacterMono.arroundEnemies[0] == null || !BlackBorad.CharacterMono.arroundEnemies[0].IsCanBeAttack()) BlackBorad.CharacterMono.arroundEnemies.RemoveAt(0);
             return BlackBorad.CharacterMono.arroundEnemies[0];
-        } catch (System.Exception e) {
+        } catch (Exception) {
+            Debug.LogWarning("怪物AI状态转换出现异常");
             return null;
         }
     }

@@ -11,7 +11,7 @@ public class SynchronizeNPC {
 
     public void Init(CharacterMono characterMono) {
         characterMono.OnMove += TransformSynchronize;
-        characterMono.OnPlayAnimation += AniamtionSynchronize;
+        characterMono.OnPlayAnimation += AnimationSynchronize;
         characterMono.OnSpell += SpellSkillSynchronize;
     }
 
@@ -21,7 +21,7 @@ public class SynchronizeNPC {
     }
 
     // 动画同步
-    public void AniamtionSynchronize(CharacterMono characterMono, string operation) {
+    public void AnimationSynchronize(CharacterMono characterMono, string operation) {
         // 构造协议
         ProtocolBytes protocol = new ProtocolBytes();
 

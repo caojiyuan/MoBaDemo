@@ -50,3 +50,31 @@ The following packages were added:
   com.unity.timeline@1.6.4
   com.unity.ugui@1.0.0
   com.unity.xr.legacyinputhelpers@2.1.10
+
+=== Tue May 27 15:15:51 2025
+
+Packages were changed.
+Update Mode: resetToDefaultDependencies
+
+The following packages were 已添加:
+  com.unity.visualscripting@1.8.0
+The following packages were 已更新:
+  com.unity.textmeshpro 从版本 3.0.9 到 3.0.6
+The following packages were 已移除:
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.tilemap@1.0.0
+  com.unity.analytics@3.6.12
+  com.unity.purchasing@4.7.0
+  com.unity.xr.legacyinputhelpers@2.1.10
+
+=== Wed May 28 16:15:27 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已添加:
+  com.unity.ai.navigation@1.1.5
+The following packages were 已更新:
+  com.unity.collab-proxy 从版本 2.0.7 到 2.6.0
+  com.unity.timeline 从版本 1.6.5 到 1.7.6
+  com.unity.visualscripting 从版本 1.8.0 到 1.9.4

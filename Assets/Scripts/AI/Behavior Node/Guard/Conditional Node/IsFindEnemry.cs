@@ -68,8 +68,8 @@ public class IsFindEnemry : Conditional{
 
             return characterMono.arroundEnemies[maxIndex];
 
-        } catch (System.Exception e) {
-            Debug.LogWarning("AI单位-"+characterMono.name+"在选择敌人时出错！");
+        } catch (Exception) {
+            // Debug.LogError(e.Message);
             return null;
         }
     }

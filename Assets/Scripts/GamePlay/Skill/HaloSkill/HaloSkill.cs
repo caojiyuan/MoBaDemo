@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// 光环技能(基类),
@@ -26,7 +25,7 @@ public class HaloSkill : PassiveSkill{
         }
     }
 
-    protected UnitType SkillTargetType {
+    protected new UnitType SkillTargetType {
         get {
             return skillTargetType;
         }

@@ -1,0 +1,6 @@
+{
+    "omnisharp.useModernNet": false,
+    "omnisharp.path": "latest",
+    "cs-script.dotnet": "net6.0",
+    "cs-script.intellisense": "cs-script.syntaxer"
+}

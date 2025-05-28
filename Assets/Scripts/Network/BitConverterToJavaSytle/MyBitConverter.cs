@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.Script {
-    class MyBitConverter {
+namespace Assets.Scripts.Network.BitConverterToJavaSytle{
+    public class MyBitConverter {
         public static int ToInt32(byte[] bytes, int start) {
             byte[] tempData = new byte[4];
             for (int i=start+3;i>=start;i--) {

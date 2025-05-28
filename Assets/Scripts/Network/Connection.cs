@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 using System.Net.Sockets;
 using System.Collections.Generic;
@@ -70,7 +69,13 @@ public class Connection {
         byte[] bytes = protocolBytes.Encode();
         byte[] lenBytes = BitConverter.GetBytes(bytes.Length).Reverse().ToArray();
         byte[] combineBytes = lenBytes.Concat(bytes).ToArray();
-        socket.Send(combineBytes);
+        try {
+            socket.Send(combineBytes);
+        }
+        catch (Exception)
+        {
+            //  Debug.Log("发送数据失败,错误原因:" + e.Message);
+        }
     }
 
     /// <summary>
@@ -107,7 +112,7 @@ public class Connection {
 
             // 继续对数据进行异步接受
             Socket.BeginReceive(readBuff, bufferCount, BUFFER_SIZE - bufferCount, SocketFlags.None, ReceiveCB, readBuff);
-        } catch (Exception e) { }
+        } catch (Exception) { }
     }
 
     /// <summary>

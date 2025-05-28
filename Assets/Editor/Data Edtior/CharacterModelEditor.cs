@@ -142,9 +142,8 @@ public class CharacterModelEditor : EditorWindow {
                 int maxCount = 1;
                 try {
                     maxCount = ObjectJsonData[propertyInfo.Name].Count;
-                } catch (Exception e) {
-                    ObjectJsonData[propertyInfo.Name] = new JsonData();
-                    ObjectJsonData[propertyInfo.Name].Add(0);
+                } catch (Exception) {
+                    // Debug.Log("数据错误");
                 }
 
                 Debug.Log("maxCount:"+maxCount);
